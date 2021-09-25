@@ -100,16 +100,17 @@
     const phone = document.querySelector("#cphone")
     const cmessage = document.querySelector("#cmessage")
     const url = `${uri}${session}${point}`
-    const message = `*Messagem da Landing Page* Olá meu nome é ${name.value} e meu número é ${phone.value} visitei seu site e desejo o seguinte: ${cmessage.value}`
-    const body = {
-        "phone": "5586988698580",
-        "message": message,
-        "isGroup": false
-      }
+   
       const confirme = document.querySelector("#resposta")
     btnSend.addEventListener("click", event=>{
         event.preventDefault()
         if(name.value && phone.value && cmessage.value){
+            const message = `*Messagem da Landing Page* Olá meu nome é ${name.value} e meu número é ${phone.value} visitei seu site e desejo o seguinte: ${cmessage.value}`
+            const body = {
+                "phone": "5586988698580",
+                "message": message,
+                "isGroup": false
+              }
             document.getElementById("btnSend").innerHTML = "Aguarde..."
             fetch(url,{
                 method:'POST',
