@@ -92,7 +92,7 @@
 
     /*Send Message to WhatsApp*/
     const uri='https://message.confesta.com.br/api/'
-    const token= '$2b$10$tBSp.BGjaQhzh7ACXgh7luW_SC2dEC2hmpuOCOpyaZumZbxr20BPm'
+    const token= '$2b$10$LQrRv6Q18ArHHcBUCu9oLeJvJJ4HnZjwEH1EM02OkkSQDDgOo7fy2'
     const session= 'messagesite/'
     const  point='send-message'
     const btnSend = document.querySelector("#btnSend")
