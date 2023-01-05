@@ -15,5 +15,9 @@ curl_setopt_array($ch, $options);
 $data = curl_exec($ch);
 $status = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
 curl_close($ch);
-
-var_dump($data);
+$response =  json_decode($data);
+if($response->vci == "TSY" and $response->response_code == 0){
+    echo $response->status;
+}else{
+    var_dump($data);
+}
