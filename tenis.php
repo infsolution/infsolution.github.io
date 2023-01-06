@@ -41,7 +41,7 @@
         <script src="https://sdk.mercadopago.com/js/v2"></script>
 
         <script>
-            const mp = new MercadoPago("APP_USR-25195a04-3170-4c26-a9fc-5c21b66a0e14");
+            const mp = new MercadoPago("TEST-1478acb6-908b-476c-b7da-a3dcd5e8d5ac");
 
             const cardForm = mp.cardForm({
                 amount: "10.00",
@@ -113,7 +113,7 @@
                                 "Content-Type": "application/json",
                             },
                             body: JSON.stringify({
-                                "environment":"PRD",
+                                "environment":"HML",
                                 "mp_request": {
                                 "additional_info": {
                                     "payer": {
