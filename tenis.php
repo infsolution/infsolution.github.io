@@ -117,8 +117,8 @@
                                 "mp_request": {
                                 "additional_info": {
                                     "payer": {
-                                        "first_name": "Test Cicero",
-                                        "last_name": "Test",
+                                        "first_name": "Cicero",
+                                        "last_name": "Silva",
                                         "phone": {
                                             "area_code": 11,
                                             "number": "987654321"
@@ -145,7 +145,7 @@
                                         "number": 35798469905,
                                         "type": ""
                                     },
-                                    "email": "teste@teste.com.br"
+                                    "email": "cicero.silva@w16.dev"
                                 },
                                 "payment_method_id": `${payment_method_id}`,
                                 "token": `${token}`,
