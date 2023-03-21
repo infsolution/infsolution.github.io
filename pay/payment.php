@@ -29,5 +29,6 @@ $result = curl_exec($ch);
 $status = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
 curl_close($ch);
 $response =  json_decode($result);
-var_dump($status);
-var_dump($response->status);
+
+
+echo json_encode($response);

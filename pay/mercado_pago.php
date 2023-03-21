@@ -150,6 +150,12 @@
                         }
 
                         ),
+                    }).then((response) => response.json()).then((data)=>{
+                        if(data.status == 'approved'){
+                            window.location.href = "aproved.php"
+                        }else{
+                            window.location.href = "error.php"
+                        }
                     });
                 },
                 onFetching: (resource) => {
