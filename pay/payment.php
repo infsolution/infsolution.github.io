@@ -30,5 +30,7 @@ $status = curl_getinfo($ch, CURLINFO_RESPONSE_CODE);
 curl_close($ch);
 $response =  json_decode($result);
 
-
+header('Content-Type: application/json'); 
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Origin,Content-Type');
 echo json_encode($response);
