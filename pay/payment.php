@@ -6,7 +6,7 @@ $post = json_decode($content);
 $data =[];
 $data["transaction_amount"]=floatval($post->transaction_amount);
 $data["token"]=$post->token;
-$data["description"]="Carro de boi sem rodas.";
+$data["description"]="Fatuta 45896.";
 $data["installments"]=$post->installments;
 $data["payment_method_id"]=$post->payment_method_id;
 $data["issuer_id"]=$post->issuer_id;
@@ -18,7 +18,7 @@ $mpUrl = "https://api.mercadopago.com/v1/payments";
 $ch = curl_init($mpUrl);
 $options = [CURLOPT_POST => true,
             CURLOPT_HTTPHEADER => ['Content-Type: application/json',
-                                    'Authorization: Bearer TEST-7608988660775768-032015-79c61f18ea0d1936a9215a5dc1ba12b4-167119886'
+                                    'Authorization: Bearer APP_USR-6500514281119688-020811-59a19f04add10501424ae500b1b85b21-17301145'
                                 ], 
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_POSTFIELDS=>json_encode($data)

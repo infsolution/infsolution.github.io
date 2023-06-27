@@ -40,10 +40,10 @@
     <script src="https://sdk.mercadopago.com/js/v2"></script>
 
     <script>
-        const mp = new MercadoPago("TEST-3388619d-d8fb-4fb9-baf7-13fb69f9a205");
+        const mp = new MercadoPago("APP_USR-33b39e5b-87ce-4c66-8f86-5e32c2a6144e");
 
         const cardForm = mp.cardForm({
-            amount: "100.5",
+            amount: "10",
             iframe: true,
             form: {
                 id: "form-checkout",
@@ -106,7 +106,7 @@
                         identificationNumber,
                     } = cardForm.getCardFormData();
 
-                    fetch("http://localhost:8099/pay/payment.php", {
+                    fetch("https://clsdev.com.br/pay/payment.php", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json",
